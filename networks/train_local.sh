@@ -1,0 +1,2 @@
+#!/bin/bash
+python train_local.py --log_dir mlp_local_full_dataset_latent_2048_len_10_kl_0.5 --train_data_path /home/jianwang/ScanNet/static00/EgocentricAMASS --latent_dim 2048 --kl_weight 0.5 --seq_length 10 --batch_size 64 --new_dataset False --fps 25 --network mlp
