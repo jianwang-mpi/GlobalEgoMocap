@@ -330,7 +330,7 @@ def main(data_id, camera_model_path, vae_weight, gmm_weight, smoothness_weight, 
     overlap_size = 2
 
     body_pose_optimizer = BodyPoseOptimizer(camera_model_path=camera_model_path,
-                                            mean_skeleton=torch.from_numpy(gt_skeleton).float(),
+                                            mean_skeleton=torch.from_numpy(estimated_local_skeleton).float(),
                                             vae_path='networks/logs/real_full_dataset_latent_2048_len_10_slide_window_step_1_kl_0.5/checkpoints/19.pth.tar',
                                             latent_dim=2048,
                                             network_seq_len=seq_len,
@@ -340,7 +340,7 @@ def main(data_id, camera_model_path, vae_weight, gmm_weight, smoothness_weight, 
                                             lr=2, max_iter=25)
 
     local_body_pose_optimizer = BodyPoseOptimizer(camera_model_path=camera_model_path,
-                                                  mean_skeleton=torch.from_numpy(gt_skeleton).float(),
+                                                  mean_skeleton=torch.from_numpy(estimated_local_skeleton).float(),
                                                   vae_path='networks/logs/only_local_full_dataset_latent_2048_len_10_kl_0.5_2/checkpoints/19.pth.tar',
                                                   latent_dim=2048,
                                                   network_seq_len=seq_len,

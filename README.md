@@ -15,11 +15,8 @@ If you find this repository useful, please cite:
 }
 ```
 
-### the motion vae
 
-see directory ```networks```
-
-### run the optimization for our dataset
+### Run the optimization for our dataset
 
 ```
 python optimize_whole_sequence.py --data_path data/jian3
@@ -29,12 +26,12 @@ python optimize_whole_sequence.py --data_path data/studio-lingjie1
 python optimize_whole_sequence.py --data_path data/studio-lingjie2
 ```
 
+### Train the motion vae
+
+If you want to train the motion vae, please see directory ```networks```
+
+
 ### prepare the data for optimization
-If you want to run on you own dataset,
-you need to firstly preprocess the data.
-See ```MakeDataForOptimization```
+If you want to run on your own dataset,
+you need to firstly preprocess the data with repo: ```MakeDataForOptimization```.
 
-
-
-
-# GlobalEgoMocap
