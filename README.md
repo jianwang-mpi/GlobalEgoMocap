@@ -18,8 +18,8 @@ If you find this repository useful, please cite:
 
 ### Run the optimization for our dataset
 
-1. Download the trained VAE model into directory ```networks/logs``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/ibBB7TbEsWQrMJa).
-2. Download the processed test sequences into directory ```data``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/kLNeAdbJzmSYKsZ).
+1. Run ```mkdir networks/logs``` and download the trained VAE model into directory ```networks/logs``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/ibBB7TbEsWQrMJa).
+2. Run ```mkdir data``` and download the processed test sequences into directory ```data``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/kLNeAdbJzmSYKsZ).
 3. Run the test on the sequences:
 ```
 python optimize_whole_sequence.py --data_path data/jian3
