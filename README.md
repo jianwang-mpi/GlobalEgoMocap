@@ -18,6 +18,9 @@ If you find this repository useful, please cite:
 
 ### Run the optimization for our dataset
 
+1. Download the trained VAE model into directory ```networks/logs``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/ibBB7TbEsWQrMJa).
+2. Download the processed test sequences into directory ```data``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/kLNeAdbJzmSYKsZ).
+3. Run the test on the sequences:
 ```
 python optimize_whole_sequence.py --data_path data/jian3
 python optimize_whole_sequence.py --data_path data/studio-jian1
@@ -28,8 +31,11 @@ python optimize_whole_sequence.py --data_path data/studio-lingjie2
 
 ### Train the motion vae
 
-If you want to train the motion vae, please see directory ```networks```
+If you want to train the motion vae:
 
+1. run ```mkdir AMASSDataConverter && cd AMASSDataConverter && mkdir pkl_data```
+2. download the processed dataset to directory ```pkl_data``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/aaGCsZ4Sgz4ftge).
+3. see directory ```networks```
 
 ### prepare the data for optimization
 If you want to run on your own dataset,
