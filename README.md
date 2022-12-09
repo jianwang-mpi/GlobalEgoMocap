@@ -4,7 +4,7 @@ The official implementation of paper: Estimating Egocentric 3D Human Pose in Glo
 
 If you find this repository useful, please cite:
 
-'''
+```
 @InProceedings{Wang_2021_ICCV,
     author    = {Wang, Jian and Liu, Lingjie and Xu, Weipeng and Sarkar, Kripasindhu and Theobalt, Christian},
     title     = {Estimating Egocentric 3D Human Pose in Global Space},
@@ -13,7 +13,7 @@ If you find this repository useful, please cite:
     year      = {2021},
     pages     = {11500-11509}
 }
-'''
+```
 
 ### the motion vae
 
