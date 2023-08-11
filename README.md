@@ -1,6 +1,10 @@
 # Egocentric Pose Optimizer
 
-The official implementation of paper: Estimating Egocentric 3D Human Pose in Global Space.
+The official implementation of paper: 
+
+### Estimating Egocentric 3D Human Pose in Global Space.
+
+[[project page]](https://vcai.mpi-inf.mpg.de/projects/globalegomocap/)
 
 If you find this repository useful, please cite:
 
