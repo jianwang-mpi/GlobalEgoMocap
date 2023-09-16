@@ -43,5 +43,12 @@ If you want to train the motion vae:
 
 ### prepare the data for optimization
 If you want to run on your own dataset,
-you need to firstly preprocess the data with repo: ```MakeDataForOptimization```.
+you need to firstly preprocess the data following the scripts in directory: ```MakeDataForOptimization```.
+Basically you need to prepare the following data:
+1. Predicted human body heatmap in egocentric view.
+2. Predicted human body joint depths in egocentric view.
+3. Human body ground truth (for calculating MPJPEs).
+4. Camera pose sequence from the OpenVSLAM method.
+
+All of these data are combined into a single pickle file for each sequence.
 
