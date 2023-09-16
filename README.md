@@ -1,6 +1,10 @@
 # Egocentric Pose Optimizer
 
-The official implementation of paper: Estimating Egocentric 3D Human Pose in Global Space.
+The official implementation of paper: 
+
+### Estimating Egocentric 3D Human Pose in Global Space.
+
+[[project page]](https://vcai.mpi-inf.mpg.de/projects/globalegomocap/)
 
 If you find this repository useful, please cite:
 
@@ -15,12 +19,12 @@ If you find this repository useful, please cite:
 }
 ```
 
+### Optimize the motion sequences in proposed dataset
 
-### Run the optimization for our dataset
-
-1. Run ```mkdir networks/logs``` and download the trained VAE model into directory ```networks/logs``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/ibBB7TbEsWQrMJa).
-2. Run ```mkdir data``` and download the processed test sequences into directory ```data``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/kLNeAdbJzmSYKsZ).
-3. Run the test on the sequences:
+1. Install pytorch 1.4+ with cuda support.
+2. Run ```mkdir networks/logs``` and download the trained VAE model into directory ```networks/logs``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/ibBB7TbEsWQrMJa).
+3. Run ```mkdir data``` and download the processed test sequences into directory ```data``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/kLNeAdbJzmSYKsZ).
+4. Run the test on the sequences:
 ```
 python optimize_whole_sequence.py --data_path data/jian3
 python optimize_whole_sequence.py --data_path data/studio-jian1
