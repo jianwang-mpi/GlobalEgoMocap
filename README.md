@@ -35,11 +35,7 @@ python optimize_whole_sequence.py --data_path data/studio-lingjie2
 
 ### Train the motion vae
 
-If you want to train the motion vae:
-
-1. run ```mkdir AMASSDataConverter && cd AMASSDataConverter && mkdir pkl_data```
-2. download the processed dataset to directory ```pkl_data``` from [here](https://nextcloud.mpi-klsb.mpg.de/index.php/s/aaGCsZ4Sgz4ftge).
-3. see directory ```networks```
+If you want to train the motion VAE, See directory ```networks```
 
 ### prepare the data for optimization
 If you want to run on your own dataset,
